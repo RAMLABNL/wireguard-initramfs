@@ -72,7 +72,17 @@ wireguard first. Then restrict to the wireguard network once it is working:
 DROPBEAR_OPTIONS='... -p 172.31.255.10:22 ...'
 ```
 
+### Debian packaging
+To create a .deb package, run the following commands from the `debian` folder.
+
+First, create the .orig.tar.gz with original source:
+```
+tar -czvf ../../wireguard-initramfs_2021.07.04.orig.tar.gz --exclude="debian" --exclude=".git" ../
+```
+Then, build the package:
+```
+debuild -us -uc
+```
+
 ## Bug / Patches / Contributions?
 All are welcome, please submit a pull request or open a bug!
-
-Know debian packaging? Create a .deb package for this!

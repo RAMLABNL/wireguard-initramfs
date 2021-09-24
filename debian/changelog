@@ -1,0 +1,5 @@
+wireguard-initramfs (2021.07.04-1) UNRELEASED; urgency=medium
+
+  * Initial release. (Closes: #XXXXXX)
+
+ -- Erik Schuitema <erik@ramlab.com>  Thu, 23 Sep 2021 13:03:35 +0000

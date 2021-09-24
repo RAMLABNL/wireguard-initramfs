@@ -1,0 +1,12 @@
+Source: wireguard-initramfs
+Maintainer: Erik Schuitema <erik@ramlab.com>
+Section: misc
+Priority: optional
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 9)
+
+Package: wireguard-initramfs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, initramfs-tools, wireguard
+Description: wireguard in initramfs
+ Enables wireguard networking in initramfs during kernel boot. Useful when combined with Dropbear.
