@@ -85,6 +85,8 @@ debuild -us -uc
 ```
 This will result in two additional files: `wireguard-initramfs_2021.07.04.orig.tar.gz` and `wireguard-initramfs_2021.07.04-1_amd64.deb`.
 
+TODO: fix triggering `update-initramfs -u` after package install; fix package removal and reinstall.
+
 
 ## Bug / Patches / Contributions?
 All are welcome, please submit a pull request or open a bug!
